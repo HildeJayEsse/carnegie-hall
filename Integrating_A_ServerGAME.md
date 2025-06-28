@@ -5,14 +5,14 @@
 ### TASKS:Assign two temporary IP addresses to the server's main network. 
 ### WHY: For A/B Testing
 ## KEY HARDWARE
-    -**MODEM** connects to Internet Service Provider (**ISP**) and tranlates internet signals. 
+    **MODEM** connects to Internet Service Provider (**ISP**) and tranlates internet signals. 
         -Think of as translator between ISP and my home network. 
-    -**ROUTER** Assigns **IPs** and routes traffic between devices on the network and the internet
+    **ROUTER** Assigns **IPs** and routes traffic between devices on the network and the internet
         -Think of Router as traffic control, managing communication 
        *MODEM V ROUTER*: modem brings it to the home, router distriutes it to devices. 
-    -**SWITCH** Handles multiple wired (Ethernet) connections
-    -**ACCESS POINT** Provides WiFi to wireless **clients**
-    -**NIC** Network Access Card. Hardware component within both server and client devices. It's what actually connects the device to the network
+    **SWITCH** Handles multiple wired (Ethernet) connections
+    **ACCESS POINT** Provides WiFi to wireless **clients**
+    **NIC** Network Access Card. Hardware component within both server and client devices. It's what actually connects the device to the network
     *Most household out-of-the-box or ISP provided devices are combo mmodem/routers that handle:*
         -WAN connection     
         -LAN routing
@@ -20,55 +20,55 @@
         -Firewalling. 
 ## Terms
 ### SERVER
-    - A computer or software application that provides servies, or resources to other computers (**clients**) over a **network** 
-    - common types include
+     A computer or software application that provides servies, or resources to other computers (**clients**) over a **network** 
+     common types include
         -web servers
         -file servers
         -database servers
-    - **Client**
+     **Client**
         -a computer or software application that requests and uses services or resources from a **server** over a **network**
 ### NETWORK
-    -A group of interconnected computers and devices that can communicate and share resources. This includes both physical (wired/wireless/bluetooth) connections **AND** logical (IP addressing, protocols) components
+    A group of interconnected computers and devices that can communicate and share resources. This includes both physical (wired/wireless/bluetooth) connections **AND** logical (IP addressing, protocols) components
 
 ### A/B TESTING 
-    -Method by testing two versions (A and B) of a system (website, service, or configuration) by directing a portion of traffic to each version and measuring which performs better according to certain metrics
+    Method by testing two versions (A and B) of a system (website, service, or configuration) by directing a portion of traffic to each version and measuring which performs better according to certain metrics
 ### NIC (Network Interface Card)
-    -Computer hardware or virtualized interface that enables a computer to connect to a network. It handles communication at the **data link layer**, has a **MAC adress** and supports **IP configuration**. 
-    -**Primary NIC** 
+    Computer hardware or virtualized interface that enables a computer to connect to a network. It handles communication at the **data link layer**, has a **MAC adress** and supports **IP configuration**. 
+    **Primary NIC** 
         -the main network interface used by the system for default outbound traffic and communication. Often associated with the system's default gateway and primary **IP address**
 
 ### MAC ADRESS  
-    - Media Access Control address. Hardware identifier assigned to a NIC
-    - It is a unique 48-bit address (`00:1A:2B:3C:4D:5E`)
+     Media Access Control address. Hardware identifier assigned to a NIC
+     It is a unique 48-bit address (`00:1A:2B:3C:4D:5E`)
 ### IP ADDRESS
-    - A numerical label assigned to a device on a network, used for identifying the source and destination of data. 
+     A numerical label assigned to a device on a network, used for identifying the source and destination of data. 
 ### IP ALIASING
-    - The process of assigning multiple IP addresses to a single network interface
+     The process of assigning multiple IP addresses to a single network interface
 ### Outbound Traffic 
-    - Data sent FROM a server or device TO other systems on the network or internet
+     Data sent FROM a server or device TO other systems on the network or internet
 ### GATEWAY
-    - The device (typically a **router**) that connects a local netwrok to external networks, such as the internet. 
+     The device (typically a **router**) that connects a local netwrok to external networks, such as the internet. 
 ### DEFAULT GATEWAY
-    - The router or network node that a devie uses to send traffic distined fr outside its local network -- essentall the "next hop" for non-local IP addresses. 
-    - where a device sends traffic when the destnation IP is outside the local subnet.
+     The router or network node that a devie uses to send traffic distined fr outside its local network -- essentall the "next hop" for non-local IP addresses. 
+     where a device sends traffic when the destnation IP is outside the local subnet.
 ### SUBNET
-    - Short for `subnetwork`. A logically defined define section of a larger network, created by dividing an IP network into smaller segments. Subnets group devices with similar addresses, which improves routing efficiency and network organization. 
+     Short for `subnetwork`. A logically defined define section of a larger network, created by dividing an IP network into smaller segments. Subnets group devices with similar addresses, which improves routing efficiency and network organization. 
     **Example**
-       - If the network is `192.168.1.0/24`
-            - The **subnet** includes all IPs from `192.168.1.1` to `192.168.1.254`
-            - Devices within the subnet can commiunicate directly with each other. 
-            - Anything outside thi subnet must go through a **gateway**.
+        If the network is `192.168.1.0/24`
+             The **subnet** includes all IPs from `192.168.1.1` to `192.168.1.254`
+             Devices within the subnet can commiunicate directly with each other. 
+             Anything outside thi subnet must go through a **gateway**.
 ### SUBNET MASK
-    - 32-bit number that works alongside an IP address to define which portion of the address identifies the **netowrk** and which part identifies the **host**
+     32-bit number that works alongside an IP address to define which portion of the address identifies the **netowrk** and which part identifies the **host**
 ### Interface Names
     **NAMING CONVENTION**
     `eth0`, `eth1` traditional naming 
     STRUCTURE: **zero indexed**--`first ethernet interface, second ethernet int`
 ### DHCP
-    - Dynamic Host Configuration Protocol. A network protocol that automaticallly assigns IP addresses and other network configuration settings such as **subnet mask** **gateway** **DNS** to devices on the network so they can communicate without manual setup. 
+     Dynamic Host Configuration Protocol. A network protocol that automaticallly assigns IP addresses and other network configuration settings such as **subnet mask** **gateway** **DNS** to devices on the network so they can communicate without manual setup. 
 
 ### Manual Setup
-   - Also called 'strategic configuration', means assigning a device's network settings such as IP address, subnet mask, gateway, DNS, without using automatic system like DHCP
+    Also called 'strategic configuration', means assigning a device's network settings such as IP address, subnet mask, gateway, DNS, without using automatic system like DHCP
 ## THE HANDS ON 
     Hey, Hilde. It's me, you! Your favorite haha. Okay, so my idea here is I am going to jounal out this portion. This is pretty cool, and I think it's a very valuable resource. Not to mention, this is a very well gamified exersize. So, just to get us all caught up...this is an exercise I found on a government Cyber Sercurity careers page. I think my dad is onto something. Security is the way to go. 
 So this is some baby steps stuff. 
