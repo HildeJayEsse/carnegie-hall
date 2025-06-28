@@ -38,37 +38,37 @@
         -the main network interface used by the system for default outbound traffic and communication. Often associated with the system's default gateway and primary **IP address**
 
 ### MAC ADRESS  
-    -Media Access Control address. Hardware identifier assigned to a NIC
-    -It is a unique 48-bit address (`00:1A:2B:3C:4D:5E`)
+    - Media Access Control address. Hardware identifier assigned to a NIC
+    - It is a unique 48-bit address (`00:1A:2B:3C:4D:5E`)
 ### IP ADDRESS
-    -A numerical label assigned to a device on a network, used for identifying the source and destination of data. 
+    - A numerical label assigned to a device on a network, used for identifying the source and destination of data. 
 ### IP ALIASING
-    -The process of assigning multiple IP addresses to a single network interface
+    - The process of assigning multiple IP addresses to a single network interface
 ### Outbound Traffic 
-    -Data sent FROM a server or device TO other systems on the network or internet
+    - Data sent FROM a server or device TO other systems on the network or internet
 ### GATEWAY
-    -The device (typically a **router**) that connects a local netwrok to external networks, such as the internet. 
+    - The device (typically a **router**) that connects a local netwrok to external networks, such as the internet. 
 ### DEFAULT GATEWAY
-    -The router or network node that a devie uses to send traffic distined fr outside its local network -- essentall the "next hop" for non-local IP addresses. 
-    -where a device sends traffic when the destnation IP is outside the local subnet.
+    - The router or network node that a devie uses to send traffic distined fr outside its local network -- essentall the "next hop" for non-local IP addresses. 
+    - where a device sends traffic when the destnation IP is outside the local subnet.
 ### SUBNET
-    -Short for `subnetwork`. A logically defined define section of a larger network, created by dividing an IP network into smaller segments. Subnets group devices with similar addresses, which improves routing efficiency and network organization. 
+    - Short for `subnetwork`. A logically defined define section of a larger network, created by dividing an IP network into smaller segments. Subnets group devices with similar addresses, which improves routing efficiency and network organization. 
     **Example**
-       -If the network is `192.168.1.0/24`
-            -The **subnet** includes all IPs from `192.168.1.1` to `192.168.1.254`
+       - If the network is `192.168.1.0/24`
+            - The **subnet** includes all IPs from `192.168.1.1` to `192.168.1.254`
             - Devices within the subnet can commiunicate directly with each other. 
             - Anything outside thi subnet must go through a **gateway**.
 ### SUBNET MASK
-    -32-bit number that works alongside an IP address to define which portion of the address identifies the **netowrk** and which part identifies the **host**
+    - 32-bit number that works alongside an IP address to define which portion of the address identifies the **netowrk** and which part identifies the **host**
 ### Interface Names
     **NAMING CONVENTION**
     `eth0`, `eth1` traditional naming 
     STRUCTURE: **zero indexed**--`first ethernet interface, second ethernet int`
 ### DHCP
-    -Dynamic Host Configuration Protocol. A network protocol that automaticallly assigns IP addresses and other network configuration settings such as **subnet mask** **gateway** **DNS** to devices on the network so they can communicate without manual setup. 
+    - Dynamic Host Configuration Protocol. A network protocol that automaticallly assigns IP addresses and other network configuration settings such as **subnet mask** **gateway** **DNS** to devices on the network so they can communicate without manual setup. 
 
 ### Manual Setup
-   -Also called 'strategic configuration', means assigning a device's network settings such as IP address, subnet mask, gateway, DNS, without using automatic system like DHCP
+   - Also called 'strategic configuration', means assigning a device's network settings such as IP address, subnet mask, gateway, DNS, without using automatic system like DHCP
 ## THE HANDS ON 
     Hey, Hilde. It's me, you! Your favorite haha. Okay, so my idea here is I am going to jounal out this portion. This is pretty cool, and I think it's a very valuable resource. Not to mention, this is a very well gamified exersize. So, just to get us all caught up...this is an exercise I found on a government Cyber Sercurity careers page. I think my dad is onto something. Security is the way to go. 
 So this is some baby steps stuff. 
@@ -76,14 +76,14 @@ So this is some baby steps stuff.
 The first "job" is to assign two temporary **IP addresses** to the server for the purpose of **A/B testing**. 
 
 These are all terms I have looked up above. 
-IP address: numerical label assigned to a device on a network
-A/B Testing: putting two different versions of the same software or process through similar tests to see which performs better according to certain metrics.
+**IP address**: numerical label assigned to a device on a network
+**A/B Testing**: putting two different versions of the same software or process through similar tests to see which performs better according to certain metrics.
 
 In the scenario, this is a request from the **Development Team** to the **Network Operations Team**. IIiii'm the Network Operations Team. SO!!The Network operations team's job is to makee sure things get indexed into the network propely and maintaining the network. We all gotta start somewhere. 
 
 Whatcha gotta do is first is review the exisitng IP addresses configured on the **server's** **primary NIC**
-Server: a software applicaton or computer thhat provides serrvices and resources to other devices on the network. 
-NIC: Network Interface Card--hardware or virtualized program that enables a computer to connet to a network. If you remember the stuff from like over a year ago about the network layers, this one lives at the data link layer. It's a HARDWARE girl, and both the client and server hardware have her. She is important. NIC network interface card. Hardware, both client and server have their own. The NIC is what allows the device to connect to the network, be it wired or wireless. Examples would be my laptop, which has a NIC for wireless, wired (ethernet), or my internet home intnernet router, which has a NIC for ethernet connections and wifi connections. 
+**Server**: a software applicaton or computer thhat provides serrvices and resources to other devices on the network. 
+**NIC**: Network Interface Card--hardware or virtualized program that enables a computer to connet to a network. If you remember the stuff from like over a year ago about the network layers, this one lives at the data link layer. It's a *HARDWARE girl*, and **both** the **client** && **server** hardware have her. She is important. NIC network interface card. Hardware, both client and server have their own. The NIC is what allows the device to connect to the network, be it wired or wireless. Examples would be my laptop, which has a NIC for wireless, wired (ethernet), or my internet home intnernet router, which has a NIC for ethernet connections and wifi connections. 
 PRIMARY NIC: The main used by the system for outbound traffic and communication. 
 
 The way that we REVIEW EXISTING IP ADDRESSES CONFIGURED ON THE SERVER'S PRIMARY NIC
@@ -136,3 +136,13 @@ ADDING THE TEMP IPS
 
 confirm the addition with 
     `ip -4 -br address show`
+
+KEY KNOWLEDGE AREAS
+-Teams and roles
+    -Dev Team made  request to 
+    -Network Ops team. In this case, me. 
+-Why am I doing this?
+    -the Dev Team is an a testing phase of their process and they have two versions of the same software. They are going to conduct **A/B testing** *on the versions by running both of them under similar conditions and seeing which one performs better according to certain metrics*
+
+-How do I play into this?
+    -as a member of the Network Ops team, my purview covers 
